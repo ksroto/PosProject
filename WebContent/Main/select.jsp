@@ -1,14 +1,10 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-
-  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Main Menu</title>
+<title>매출현황</title>
 		<link href= "../CSS/style.css"  type="text/css" rel="stylesheet" />
 </head>
 <body>
@@ -26,7 +22,7 @@
 					<img src="../images/main_minimize.png"  />
 				</div></a>
 				
-				<a href ="../Login/login.jsp" >
+				<a href ="menu.html" >
 				<div class="topNav">
 					<img src="../images/main_back.png"  />
 				</div></a>
@@ -42,49 +38,21 @@
 			<div class="visual">
 			</div>
 			<div class="container">
-			 
-				<div class="chat">
-				<a href ="https://open.kakao.com/o/s0u0Z7I" ><img src="../images/main_talk.png"  /></a>
-				</div>
 				 
-				 <div class="allbox">
-				 
-					<a href ="sale.jsp">
-					<div class="box" >
-						<span class=""><i></i></span>
-						<img src="../images/main_computer.png"  />
-						<h3>판매관리</h3>
+					<a href ="revenue.jsp">
+					<div class="buy">
+						<img src="../images/buy.png"/>
+						<h3>결제방법 별</h3>
 					</div>
 					</a>
 					
-					<a href ="members.jsp">
-					<div class="box ">	
-						<img src="../images/main_member.png" />
-						<h3>회원관리</h3>
-					</div>
+					<a href ="revenue2.jsp">	
+					<div class="buy">
+						<img src="../images/calender.png" />
+						<h3>결제기간 별</h3>
+						</div>
 					</a>
-					
-					<a href ="detail.jsp">
-					<div class="box" >
-					<img src="../images/main_level.png" />
-					<h3>등급관리</h3>
-					</div>
-					</a>
-					
-					<a href ="select.jsp">
-					<div class="box ">	
-					<img src="../images/main_sales.png" />
-					<h3>매출현황</h3>
-					</div>
-					</a>
-					
-					<a href ="information.jsp">
-					<div class="box">	
-					<img src="../images/main_information.png" />
-					<h3>정보변경</h3>
-					</div>
-					</a>
-				</div>
+					 
 			</div>	
 		</main>
 		<footer>		

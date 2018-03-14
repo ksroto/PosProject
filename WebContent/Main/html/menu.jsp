@@ -1,23 +1,31 @@
-
+<%@page import="com.posproject.jspweb.dao.AnswerDao"%>
+<%@page import="com.posproject.jspweb.dao.jdbc.JdbcAnswerDao"%>
+<%@page import="com.posproject.jspweb.entity.Answer"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-
+    
+    
+<%
+  Answer aa = new Answer("a","a","a","a","a");
   
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+  AnswerDao answer = new JdbcAnswerDao(); 
+  	 	answer.insert(aa);
+  %>
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Main Menu</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Main Menu</title>
 		<link href= "../CSS/style.css"  type="text/css" rel="stylesheet" />
-</head>
-<body>
-	<header id="header">
+	</head>
+	<body>
+		<header id="header">
 			<div class="top">
 				<img src="../images/vpos_icon.png"  />
 			
 				<a href ="#" >
-				<div class="topNav" id="close-btn">
+				<div class="topNav">
 					<img src="../images/main_close.png"  />
 				</div> </a>
 				
@@ -26,7 +34,7 @@
 					<img src="../images/main_minimize.png"  />
 				</div></a>
 				
-				<a href ="../Login/login.jsp" >
+				<a href ="../Login/login.html" >
 				<div class="topNav">
 					<img src="../images/main_back.png"  />
 				</div></a>
@@ -44,12 +52,12 @@
 			<div class="container">
 			 
 				<div class="chat">
-				<a href ="https://open.kakao.com/o/s0u0Z7I" ><img src="../images/main_talk.png"  /></a>
+				<a href ="#" ><img src="../images/main_talk.png"  /></a>
 				</div>
 				 
 				 <div class="allbox">
 				 
-					<a href ="sale.jsp">
+					<a href ="Sale.html">
 					<div class="box" >
 						<span class=""><i></i></span>
 						<img src="../images/main_computer.png"  />
@@ -57,28 +65,28 @@
 					</div>
 					</a>
 					
-					<a href ="members.jsp">
+					<a href ="">
 					<div class="box ">	
 						<img src="../images/main_member.png" />
 						<h3>회원관리</h3>
 					</div>
 					</a>
 					
-					<a href ="detail.jsp">
+					<a href ="Level.html">
 					<div class="box" >
 					<img src="../images/main_level.png" />
 					<h3>등급관리</h3>
 					</div>
 					</a>
 					
-					<a href ="select.jsp">
+					<a href ="Select.html">
 					<div class="box ">	
 					<img src="../images/main_sales.png" />
 					<h3>매출현황</h3>
 					</div>
 					</a>
 					
-					<a href ="information.jsp">
+					<a href ="Information2.html">
 					<div class="box">	
 					<img src="../images/main_information.png" />
 					<h3>정보변경</h3>
@@ -102,5 +110,5 @@
 				</div>
 			</div>
 		</footer>
-</body>
+	</body>
 </html>
