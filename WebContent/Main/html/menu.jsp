@@ -1,17 +1,7 @@
-<%@page import="com.posproject.jspweb.dao.AnswerDao"%>
-<%@page import="com.posproject.jspweb.dao.jdbc.JdbcAnswerDao"%>
-<%@page import="com.posproject.jspweb.entity.Answer"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-    
-    
-<%
-  Answer aa = new Answer("a","a","a","a","a");
-  
-  AnswerDao answer = new JdbcAnswerDao(); 
-  	 	answer.insert(aa);
-  %>
+
 <!DOCTYPE html>
 <html>
 	<head>
