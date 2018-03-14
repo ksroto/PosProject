@@ -1,0 +1,687 @@
+@charset "UTF-8";
+
+/* ----------------------공용 header--------------------------- */
+#header{
+	width: 100%;
+	height: 100px;
+	background: #3D5B77;
+	display: table;
+}
+
+.top > img {
+	float: left;
+	width: 166px;
+	height: 100px;
+}
+
+.topNav {
+	display: inline-block;
+	text-align: center;
+	width:100px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	background: #4B6C8B;
+  	border: 2px solid #3D5B77;
+  	float: right;
+}
+
+.topNav> img{
+	width: 40px;
+	height: 40px;	
+	text-align: center;
+	margin-top:25px;
+}
+.top > a
+{
+		text-decoration: none;
+		font-size: 20px;
+		font-family: "맑은고딕", "고딕", " sans-serif";
+		color: #ffffff;
+		cursor: pointer;
+}
+
+.topNav > h5{
+	margin-top: 35px;
+	text-align: center;
+}
+
+a{
+	text-decoration : none;	
+}
+/* ----------------------<<<<  MENU >>>>-------------------- */
+/* ----------------------body-------------------- */
+body {
+ 	margin:0px;
+	 background: #CADBEC;
+	 height: 100%;
+}
+/* ----------------------html-------------------- */
+html
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* ----------------------container-------------------- */
+.container {
+	 margin: 50px auto;
+	 padding: 5px 40px;
+}
+/* ----------------------visual-------------------- */
+.visual {
+	width:100%;
+	height: 30px;
+	background: #DBEBF6;
+	display: table;
+}
+/* -----------chat--------------------- */
+.chat {
+	height:250px;
+	width: 100%;
+	
+}
+
+.chat > a > img{
+	width:75px;
+	height: 75px;
+	float: right;
+	margin-right: 150px;
+	margin-top:60px;
+}
+/* -----------box--------------------- */
+.box {
+	display: inline-block;
+	text-align: center;
+	width:200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient( to bottom, #D3E1F5, #ffffff );
+  	margin: 1%;
+  	padding: 15px;
+  	border-radius: 14px;
+  	border: 4px solid #95B3D7;
+  	float: center;
+}
+
+.box > img {
+	padding-top: 15px;
+	align: center;
+	width: 115px;
+	height: 115px;
+}
+.allbox > a {
+		text-decoration: none;
+		color: #3D5B77;
+		font-family: "맑은고딕", "고딕", " sans-serif";
+		font-weight: bold;
+		font-size: 20px
+}
+.box > h3 {
+	padding: 5px ;			
+}
+
+.allbox {
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+
+/* -------------footer-------------------- */
+.footer{
+	width: 100%;
+	height: 100px;
+	background: #3D5B77;
+	font-size: 12px;
+	
+	position:absolute;
+    bottom:0;
+}
+
+.footer > img{
+	float: right;
+	height: 100px;
+}
+
+.inf> h5 {
+	padding-top: 10px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+
+/* -----------------------------------------------------------정보변경 -------------------------------------------------------------------------------------- */
+.alter{
+	display: inline-block;
+	margin-top: 80px;
+	margin-left: 820px;	
+	font-size: 40px;
+	font-weight: bold;
+	color: #919191;
+	font-family: "맑은 고딕, 고딕, sans-serif";
+}
+
+.alter > img {
+	margin: 0px;
+	width: 40px;
+	height: 40px;
+}
+
+.contact {
+  margin-top: 50px;
+  margin-left: 20%;
+  display: inline-block;
+  color: #3D5B77;
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 30px;
+}
+
+/* ------------------------이미지 + 매장명------------------------- */ 
+.profile{
+	width: 500px;
+	margin-top: 100px;
+	margin-left: 50px;
+	float: left;
+	text-align: center;
+}
+
+.profile > img {
+	width: 200px;
+	height: 200px;	
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.profile > h3 {
+	color: #3D5B77;
+}
+
+/* ------------------------아이디 +비밀번호------------------------- */ 
+form {
+	width: 600px;
+	float: left;
+	margin: 50px 10px;
+}
+form > fieldset {
+  margin-top: 30px;
+  font-size: 12px;
+  position: relative;
+  border: none;
+  padding: 6px 0px;
+}
+
+form > fieldset > label {
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 36px;
+  color: #3D5B77;
+}
+
+form input,
+form textarea,
+form button {
+  border: 0;
+}
+form input:focus,
+form textarea:focus,
+form button:focus {
+  outline: none;
+}
+form input,
+form textarea {
+  display: block;
+  font-family: "맑은고딕", "고딕", " sans-serif";
+  font-size: 15px;
+  padding: 12px 0px;
+  width: 280px;
+  background: none;
+  color: #3D5B77;
+  border-bottom: 1px solid #7D6962;
+  transition: border 300ms ease-in-out;
+}
+form input:focus,
+form textarea:focus {
+  border-bottom: 1px solid #3D5B77;
+}
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #3D5B77;
+}
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #3D5B77;
+}
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  color: #3D5B77;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #3D5B77;
+}
+.contact textarea {
+  resize: none;
+}
+
+.contact > legend {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20;
+  margin: 10px 0px;
+}
+
+/* ------------------------확인 버튼------------------------- */ 
+.contact button {
+  letter-spacing: 3px;
+  font-size: 15px;
+  display: block;
+  background: #3D5B77;
+  color: #EEEEEE;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-left: 180px;
+  margin-top: 50px;
+}
+.contact button:hover {
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------매출현황-------------------------------------------------------------------------------------- */
+
+/* ------------------------카드/현금 결제 TAB--------------------------- */ 
+.payment{
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 90px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.card{
+	display: inline-block;
+	width: 150px;
+	background: #DDDDDD ;
+	margin: 0px;
+	height: 30px;
+}
+
+.card > a{
+		text-decoration: none;
+		color: black;
+}
+
+.card:hover{
+	text-decoration: underline;
+}
+
+.cash{
+	display: inline-block;
+	width: 150px;
+	background: #DDDDDD ;
+	margin: 0px;
+		height: 30px;
+}
+
+.cash > a{
+		text-decoration: none;
+		color: black;
+}
+
+.cash:hover{
+	text-decoration: underline;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background: linear-gradient( to top, #3D5B77 , #4B6C8B );
+  width:1400px;
+  margin-left: 250px;
+ }
+ 
+.tbl-content{
+  width: 1400px;
+  height:350px;
+  overflow-x:auto;
+  margin-top: 0px;
+  margin-left: 250px;
+  background: #fff;
+}
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: grey;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  margin-top: 0px;
+}
+
+/* ------------------------카드 / 현금   버튼 --------------------------- */
+.btn {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 200px;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6,
+.btn7
+ {
+	background: #D1E0EF;
+    color: black;
+    border: 1px solid #fff;
+}
+
+
+.btn1,
+.btn3,
+.btn5{
+	    margin-left: 200px;
+	    -webkit-border-top-left-radius:25px;
+}
+
+.btn2,
+.btn4,
+.btn6{
+	-webkit-border-top-right-radius:25px;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover,
+.btn7:hover,
+.btn8:hover{
+	background: #3D5B77;
+	color: #fff;
+}
+
+.btn3{
+	background: #3D5B77;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #fff;
+}
+
+.btn6{
+	background: #3D5B77;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #fff;
+}
+.btn8{
+	background: #3D5B77;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #fff;
+}
+/* ------------------------다운로드 버튼 --------------------------- */ 
+.button{
+	display: inline-block;
+	border: 1px solid #3D5B77;
+	width: 120px;
+	background: linear-gradient( to bottom, #4994E5, #3D5B77 );
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	font-family: "맑은 고딕, 고딕, sans-serif";
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	margin-top: 100px;
+	margin-right: 280px;
+	margin-bottom: : 30px;
+	padding: 5px;
+}
+
+.button > img{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+h1 {
+  color: #A6A49C;
+  font-family: 'Palanquin', Arial, sans-serif;
+}
+
+p {
+  color: #474544;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 14px;
+}
+
+.modal {
+  opacity: 0;
+  padding: 50px;
+  position: absolute;
+  z-index: 1100;
+  -webkit-transition: opacity 600ms linear 600ms;
+  -moz-transition: opacity 600ms linear 600ms;
+  -ms-transition: opacity 600ms linear 600ms;
+  -o-transition: opacity 600ms linear 600ms;
+  transition: opacity 600ms linear 600ms;
+}
+
+.modal_info {
+  background: #FCF9F2;
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.modal_overlay {
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 900;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -ms-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.display {
+  opacity: 1;
+  visibility: visible;
+}
+
+.conceal {
+  visibility: visible;
+}
+
+.btn_container {
+  height: 100%;
+  text-align: center;
+}
+
+.btn_container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.open_button {
+  display: inline-block;
+	border: 1px solid #3D5B77;
+	width: 120px;
+	background: linear-gradient( to bottom, #4994E5, #3D5B77 );
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	font-family: "맑은 고딕, 고딕, sans-serif";
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	float: right;
+	margin-top: 100px;
+	margin-right: 280px;
+	margin-bottom: : 30px;
+	padding: 5px;
+}
+
+ 
+a.open_button:hover {
+  background: #3E465A;
+}
+
+a.open_button.load {
+  opacity: 0;
+}
+
+a.open_button> img{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+button.modal_close {
+  background: #363D4E;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  -webkit-transition: -webkit-transform 600ms;
+  -moz-transition: -moz-transform 600ms;
+  -ms-transition: -ms-transform 600ms;
+  -o-transition: -o-transform 600ms;
+  transition: transform 600ms;
+}
+
+button.modal_close:hover {
+  background: #3E465A;
+  -webkit-transform: rotate(360deg) scale(1.10);
+  -moz-transform: rotate(360deg) scale(1.10);
+  -ms-transform: rotate(360deg) scale(1.10);
+  -o-transform: rotate(360deg) scale(1.10);
+  transform: rotate(360deg) scale(1.10);
+  -webkit-transition: -webkit-transform 600ms;
+  -moz-transition: -moz-transform 600ms;
+  -ms-transition: -ms-transform 600ms;
+  -o-transition: -o-transform 600ms;
+  transition: transform 600ms;
+}
+
+button.modal_close span, span:before, span:after {
+  background: #FFFFFF;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 20px;
+}
+
+button.modal_close span:first-child {
+  background: none;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+button.modal_close span:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+button.modal_close span:after {
+  -webkit-transform: translateY(-2px) rotate(-45deg);
+  -moz-transform: translateY(-2px) rotate(-45deg);
+  -ms-transform: translateY(-2px) rotate(-45deg);
+  -o-transform: translateY(-2px) rotate(-45deg);
+  transform: translateY(-2px) rotate(-45deg);
+  top: 2px;
+
+
+/* ---------------------------------------------------------Select---------------------------------------------------------------------------------- */
+.buy{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	float: center;
+	margin-left: 400px;
+	margin-top: 180px;
+}
+
+.buy > img{
+	width:290px;
+	height: 290px;
+}
+
+.buy > h3 {
+	color: #333333;
+	font-size: 30px;
+}
+
+.buy > h3:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.container > a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: "맑은고딕", "고딕", " sans-serif";
+	color: #ffffff;
+	cursor: pointer;
+}
+
