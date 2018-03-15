@@ -1,11 +1,27 @@
+<%@page import="com.posproject.jspweb.dao.jdbc.JdbcMenuDao"%>
+<%@page import="com.posproject.jspweb.dao.MenuDao"%>
+<%@page import="com.posproject.jspweb.entity.Menu"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ 
+  <%
+  
+  Menu aa = new Menu();
+  Menu bb = new Menu();
+  
+  MenuDao menu = new JdbcMenuDao(); 
+  aa= menu.get("a"); 
+  bb = menu.get("b"); 
+  System.out.println(aa.getName());
+  %>
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>pos-main</title>
 		<link href= "../CSS/style2.css"  type="text/css" rel="stylesheet" />
+	<script src="../js/Revenue.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -17,9 +33,9 @@
 			<nav id="topNav">
 				<ul>
 					<li><a href="#" class="lh-65">admin</a></li>
-					<li><a href="#"><img src="../images//main_back.png"/></a></li>
+					<li><a href="menu.jsp"><img src="../images//main_back.png"/></a></li>
 					<li><a href="#"><img src="../images/main_minimize.png"/></a></li>
-					<li><a href="#"><img src="../images/main_back.png"/></a></li>
+					<li><a href="#"><img src="../images/main_close.png"/></a></li>
 				</ul>
 			</nav>
 			
@@ -240,8 +256,8 @@
 		
 			<div class="menu_table">
 				<div class="coffe-menu">
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
+					<button type="button" class="" ><%=aa.getName() %><P></p><%=aa.getPrice()%>원</button>
+					<button type="button" class=""><%=bb.getName() %><P></p><%=bb.getPrice() %>원</button>
 					<button type="button" class=""></button>
 					<button type="button" class=""></button>
 					<button type="button" class=""></button>
@@ -255,9 +271,9 @@
 				</div>
 			
 				<div class="shake-menu">
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
+					<button type="button" class="">아이스티<br>2000원</button>
+					<button type="button" class="">망고스무디<br>2500원</button>
+					<button type="button" class="">버블티<br>3000원</button>
 					<button type="button" class=""></button>
 					<button type="button" class=""></button>
 				</div>
@@ -270,14 +286,14 @@
 				</div>
 				
 				<div class="dessert-menu">
+				<button type="button" class="">티라미수<br>4500원</button>
+					<button type="button" class="">딸기케이크<br>4500원</button>
+					<button type="button" class="">머랭쿠키<br>1500원</button>
 					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
+					<button type="button" class=""></button>					
 				</div>
 				
-				<div class="dessert-menu">
+				<div class="dessert-menu">					
 					<button type="button" class=""></button>
 					<button type="button" class=""></button>
 					<button type="button" class=""></button>
@@ -286,11 +302,11 @@
 				</div>
 				
 				<div class="other-menu">
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>
-					<button type="button" class=""></button>				
+					<button type="button" class="">Hot<br>0원</button>
+					<button type="button" class="">Cold<br>0원</button>
+					<button type="button" class="">Take out<br>-500원</button>
+					<button type="button" class="">샷추가<br>500원</button>
+					<button type="button" class="">시럽추가<br>500원</button>				
 				</div>
 
 							
@@ -339,15 +355,19 @@
 			</div>
 		
 			<div class="menu-btn">
-   				<button class="sm-btn">메뉴취소</button>
+   				<button class="sm-btn" id>메뉴취소</button>
    				<button type="button" class="sm-btn">쿠폰적립</button>
-   				<button type="button" class="sm-btn">할     인</button>
-   				<button type="button" class="sm-btn">메뉴추가</button>
-   				<button type="button" class="sm-btn">메뉴삭제</button>
+   				<button type="button"  class="sm-btn">할     인</button>
+   				<button type="button"  class="sm-btn">메뉴추가</button>
+   				<button type="button"  class="sm-btn" >메뉴삭제</button>
    				<button type="button" class="sm-btn">회원등록</button>
    				<button type="button" class="m-btn">현금결제</button>
    				<button type="button" class="m-btn">카드결제</button>   				
    			</div>
+   			
+   
+			
+			
 <!------------------------ 메뉴버튼 끝 --------------------------------------->
 			
 

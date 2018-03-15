@@ -22,7 +22,7 @@
 					<img src="../images/main_minimize.png"  />
 				</div></a>
 				
-				<a href ="menu.html" >
+				<a href ="menu.jsp" >
 				<div class="topNav">
 					<img src="../images/main_back.png"  />
 				</div></a>

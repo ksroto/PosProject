@@ -9,7 +9,7 @@ window.addEventListener("load", function ()
 		modal.style.display = "block";
     };
     
-    // 엑셀로 다운받도록하기
+    
     ConfirmButton.onclick = function(){
     	
     }
@@ -31,3 +31,6 @@ window.addEventListener("load", function ()
 		window.open("about:blank","_self").close();
     };
 		});
+
+
+

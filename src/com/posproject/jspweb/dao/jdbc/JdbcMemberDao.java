@@ -21,10 +21,10 @@ public class JdbcMemberDao implements MemberDao{
 		 String sql = "INSERT INTO Member (" + 
 			 		"    id," + 
 			 		"    Name," + 
-			 		"    NumberOfCoupon," +
+			 		"    Number_Of_Coupon," +
 			 		"    Tel," + 
-			 		"    RankId," + 
-			 		"    MemberId" +
+			 		"    Rank_Id," + 
+			 		"    Member_Id" +
 			 		
 			 		") VALUES("
 			 		+ "?,?,?,?,?,?)";
@@ -40,7 +40,7 @@ public class JdbcMemberDao implements MemberDao{
 					//st.setString(1, Memberis.getId());
 					st.setString(1, member.getId());
 					st.setString(2, member.getName());
-					st.setString(3, member.getNumberOfCoupon());
+					st.setInt(3, member.getNumberOfCoupon());
 					st.setString(4, member.getTel());
 					st.setString(5, member.getRankId());
 					st.setString(6, member.getMemberId());
@@ -116,7 +116,7 @@ public class JdbcMemberDao implements MemberDao{
 				
 					st.setString(1, Member.getId());
 					st.setString(2, Member.getName());
-					st.setString(3, Member.getNumberOfCoupon());
+					st.setInt(3, Member.getNumberOfCoupon());
 					st.setString(4, Member.getTel());
 					st.setString(5, Member.getRankId());
 					st.setString(6, Member.getMemberId());
@@ -163,10 +163,10 @@ public class JdbcMemberDao implements MemberDao{
 						member = new Member(
 								rs.getString("id"),
 								rs.getString("Name"),
-								rs.getString("NumberOfCoupon"),
+								rs.getInt("Number_Of_Coupon"),
 								rs.getString("Tel"),
-								rs.getString("RankId"),
-								rs.getString("MemberId")
+								rs.getString("Rank_Id"),
+								rs.getString("Member_Id")
 								);
 					}
 					
@@ -215,10 +215,10 @@ public class JdbcMemberDao implements MemberDao{
 				member = new Member(
 						rs.getString("id"),
 						rs.getString("Name"),
-						rs.getString("NumberOfCoupon"),
+						rs.getInt("Number_Of_Coupon"),
 						rs.getString("Tel"),
-						rs.getString("RankId"),
-						rs.getString("MemberId")
+						rs.getString("Rank_Id"),
+						rs.getString("Member_Id")
 						);
 				
 				//list?óê Í∞??†∏?ò®Í∞? Ï∂îÍ?

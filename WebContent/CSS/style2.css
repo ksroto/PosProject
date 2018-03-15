@@ -307,6 +307,7 @@ button {
 	width:200px; 
 	height: 85px; 
 	background: #517ca6;
+	font-size: 25px;
 	}
 .shake-menu button{
 	width:200px; 
@@ -506,3 +507,6 @@ button:hover{
     margin-bottom: 5px;
     width: 404px;
 	 }
+	 
+	 
+

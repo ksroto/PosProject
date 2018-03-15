@@ -10,6 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Main Menu</title>
 		<link href= "../CSS/style.css"  type="text/css" rel="stylesheet" />
+		<script src="../js/Revenue.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -43,8 +44,10 @@
 			</div>
 			<div class="container">
 			 
-				<div class="chat">
-				<a href ="https://open.kakao.com/o/s0u0Z7I" ><img src="../images/main_talk.png"  /></a>
+				<div class="chat" id="chat-Button">
+					<a href ="https://open.kakao.com/o/s0u0Z7I" target="_blank">
+						<img src="../images/main_talk.png"  />
+					</a>
 				</div>
 				 
 				 <div class="allbox">

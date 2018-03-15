@@ -4,7 +4,7 @@ package com.posproject.jspweb.entity;
 	public class Menu {
 		private String id;
 		private String Name; 
-		private String Price; 
+		private int Price; 
 		private String MenuId; 
 		private String DivisionId;
 		
@@ -18,7 +18,7 @@ package com.posproject.jspweb.entity;
 
 		//----------Î≥??àò ?ì§?ñ¥Í∞? ?Éù?Ñ±?ûê
 		
-		public Menu(String id,String Name,String Price,String MenuId,String DivisionId) {
+		public Menu(String id,String Name,int Price,String MenuId,String DivisionId) {
 			this.id = id;
 			this.Name = Name;
 			this.Price = Price;
@@ -43,11 +43,11 @@ package com.posproject.jspweb.entity;
 			Name = name;
 		}
 
-		public String getPrice() {
+		public int getPrice() {
 			return Price;
 		}
 
-		public void setPrice(String price) {
+		public void setPrice(int price) {
 			Price = price;
 		}
 

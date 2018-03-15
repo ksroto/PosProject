@@ -21,7 +21,7 @@
 </div>
 
 <div class="box">
-<div class = " box-b"><a href = "" ><img class = "img-1" src = "../images/back .png" > </a></div>
+<div class = " box-b"><a href = "menu.jsp" ><img class = "img-1" src = "../images/back .png" > </a></div>
 </div>
 
 <div class="box">

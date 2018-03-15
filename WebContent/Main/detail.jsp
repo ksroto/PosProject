@@ -21,7 +21,7 @@
 </div>
 
 <div class="box">
-<div class = " box-b"><a href = "" ><img class = "img-1" src = "../images/back .png" > </a></div>
+<div class = " box-b"><a href = "menu.jsp" ><img class = "img-1" src = "../images/back .png" > </a></div>
 </div>
 
 <div class="box">
@@ -41,7 +41,8 @@
 			
 			<div class = "rank-box">
 				
-				<p class = "p-rank">총 5 등급 으로 설정하겠습니다. <br> (등급 설정은 0~ 5개 까지만
+				<p class = "p-rank">총 <input type="text" maxlength="1" width="50px;"/> 등급 으로 설정하겠습니다.
+				 <br> (등급 설정은 0~ 9개 까지만
 				 가능 합니다.) </p>
 				
 					

@@ -40,7 +40,7 @@ public class JdbcMenuDao implements MenuDao {
 					//st.setString(1, Menuis.getId());
 					st.setString(1, menu.getId());
 					st.setString(2, menu.getName());
-					st.setString(3, menu.getPrice());
+					st.setInt(3, menu.getPrice());
 					st.setString(4, menu.getMenuId());
 					st.setString(5, menu.getDivisionId());
 									
@@ -118,7 +118,7 @@ public class JdbcMenuDao implements MenuDao {
 				
 					st.setString(1, menu.getId());
 					st.setString(2, menu.getName());
-					st.setString(3, menu.getPrice());
+					st.setInt(3, menu.getPrice());
 					st.setString(4, menu.getMenuId());
 					st.setString(5, menu.getDivisionId());
 
@@ -164,9 +164,9 @@ public class JdbcMenuDao implements MenuDao {
 						menu = new Menu(
 								rs.getString("id"),
 								rs.getString("Name"),
-								rs.getString("Price"),
-								rs.getString("MenuId"),
-								rs.getString("DivisionId")
+								rs.getInt("Price"),
+								rs.getString("Menu_Id"),
+								rs.getString("Division_Id")
 								);
 					}
 					
@@ -215,9 +215,9 @@ public class JdbcMenuDao implements MenuDao {
 				menu = new Menu(
 						rs.getString("id"),
 						rs.getString("Name"),
-						rs.getString("Price"),
-						rs.getString("MenuId"),
-						rs.getString("DivisionId")
+						rs.getInt("Price"),
+						rs.getString("Menu_Id"),
+						rs.getString("Division_Id")
 						);
 				
 				//list?óê Í∞??†∏?ò®Í∞? Ï∂îÍ?

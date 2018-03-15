@@ -1,5 +1,29 @@
+<%@page import="com.posproject.jspweb.dao.jdbc.JdbcMemberDao"%>
+<%@page import="com.posproject.jspweb.dao.MemberDao"%>
+<%@page import="com.posproject.jspweb.entity.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ 
+  <%
+  
+  Member aa = new Member();
+  Member bb = new Member();
+  
+  MemberDao member = new JdbcMemberDao(); 
+  aa= member.get("b"); 
+  bb = member.get("a");
+  
+  System.out.println(aa.getName());
+  %>
+  
+  <%--  
+  <%
+	  Member aa = new Member("b","ksr",55,"a","a","a");
+	  
+	  MemberDao member = new JdbcMemberDao(); 
+	  member.insert(aa);
+  %> --%>
+  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -53,18 +77,18 @@
 						</tr>
 						<tr>
 							<td class = "mamber-td">1</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td><%=aa.getName() %></td>
+							<td><%=aa.getRankId() %></td>
+							<td><%=aa.getTel() %></td>
+							<td><%=aa.getNumberOfCoupon() %></td>
 							
 						</tr>
 						<tr>
 							<td class = "mamber-td">2</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<td><%=bb.getName() %></td>
+							<td><%=bb.getRankId() %></td>
+							<td><%=bb.getTel() %></td>
+							<td><%=bb.getNumberOfCoupon() %></td>
 							
 						</tr>
 						<tr>

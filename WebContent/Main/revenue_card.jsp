@@ -53,7 +53,7 @@
 			<div id="modal">
 			    <h3> 다운로드  </h3>
 			    <p> 데이터를 다운로드 하시겠습니까? </p>
-			    <button id="confirm_button" value="excel" onclick="saveExcel('card_table','CARD')"> 확인 </button> 
+			    <button id="confirm_button" onclick="javascript:xport.toXLS('myTable');"> 확인 </button> 
 			    <button id="close_button">취소</button>
 			</div>
 			

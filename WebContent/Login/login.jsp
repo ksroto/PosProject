@@ -5,17 +5,17 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 			<title>Insert title here</title>
-			<link href= "../../../CSS/login.css"  type="text/css" rel="stylesheet" />
+			<link href= "../CSS/login.css"  type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 	<div class="wrapper">
 				<div class="container">
 					<h1>Welcome V POS </h1>
 								
-					<form class="form">
+					<form class="form" action="logincheck.jsp" method="post">											 						 
 						<input type="text" placeholder="Username">
 						<input type="password" placeholder="Password">
-						<button type="submit" id="login-button"><a href="../menu.jsp">Login</a></button>
+						<button type="submit" id="login-button"><a href="../Main/menu.jsp">Login</a></button>
 					</form>
 				</div>
 				

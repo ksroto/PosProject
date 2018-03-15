@@ -3,7 +3,7 @@ package com.posproject.jspweb.entity;
 public class Member {
 	private String id;
 	private String name; 
-	private String numberOfCoupon; 
+	private int numberOfCoupon; 
 	private String tel; 
 	private String rankId; 
 	private String memberId;
@@ -17,7 +17,7 @@ public class Member {
 		}
 		
 		//----------Î≥??àò ?ì§?ñ¥Í∞? ?Éù?Ñ±?ûê
-		public Member( String id, String name, String numberOfCoupon, String tel, String rankId, String memberId ) {
+		public Member( String id, String name, int numberOfCoupon, String tel, String rankId, String memberId ) {
 			this.id = id;
 			this.name = name;
 			this.numberOfCoupon = numberOfCoupon;
@@ -44,10 +44,10 @@ public class Member {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getNumberOfCoupon() {
+	public int getNumberOfCoupon() {
 		return numberOfCoupon;
 	}
-	public void setNumberOfCoupon(String numberOfCoupon) {
+	public void setNumberOfCoupon(int numberOfCoupon) {
 		this.numberOfCoupon = numberOfCoupon;
 	}
 	public String getTel() {
